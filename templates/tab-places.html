@@ -1,0 +1,11 @@
+<ion-view view-title="مکان های دیدنی">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar-right item-icon-left" ng-repeat="place in places" type="item-text-wrap" href="#/tab/places/{{place.id}}">
+        <img ng-src="{{place.face}}">
+        <div dir="rtl"  style="font-family: arial"><strong>{{place.name}}</strong></div>
+        <i class="icon ion-chevron-left icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

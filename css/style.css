@@ -1,0 +1,27 @@
+.text-s {
+    text-indent: 10%;
+    font-size: large;
+}
+.text.f {
+    font-size: xx-small;
+}
+.scroll {
+    height: 100%;
+}
+#map {
+    height: 400px;
+}
+ion-content{
+    z-index:99999;
+
+}
+.slider {
+    height: 100%;
+    text-align: center
+}
+#gallery{
+    height: 500px;
+}
+
+
+/* Empty. Add your own CSS if you like */

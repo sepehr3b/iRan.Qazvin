@@ -1,0 +1,35 @@
+<ion-view view-title="کمک">
+  <ion-content >
+    <ion-list>
+      <div dir="rtl" style="font-family: arial" class="item item-balanced"><strong>اطلاعات</strong></div>
+      <ul class="list">
+        <li ng-controller="geoLocationCtrl" class="item">
+          <div align="right" dir="rtl"><strong>مکان جغرافیایی شما:</strong></div>
+          <p dir="rtl" align="right">عرض جغرافیایی : {{lat}}</p>
+          <p dir="rtl" align="right">طول جغرافیایی : {{lng}}</p>
+        </li>
+        <li class="item">
+          <div align="right" dir="rtl"><strong>اطلاعات بیشتر درباره قزوین:</strong></div>
+          <button class="button button-block button-balanced" onclick="window.open('http://www.qazvin.ir/web/guest', '_system', 'location=yes'); return false;">
+            پرتال شهرداری قزوین
+          </button>
+        </li>
+        <li class="item">
+          <div align="right" dir="rtl"><strong>دانلود نسخه ویژه:</strong></div>
+          <button class="button  button-block button-outline button-balanced">
+            coming soon ...
+          </button>
+        </li>
+        <li class="item">
+          <div dir="rtl" align="right" class="item item-button-left">
+            درباره ما
+            <button ng-controller="PopupCtrl"  class="button button-icon balanced icon ion-information-circled" ng-click="showAlert()">
+            </button>
+            </button>
+          </div>
+        </li>
+        </ul>
+      </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
